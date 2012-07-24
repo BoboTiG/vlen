@@ -1,0 +1,7 @@
+For source compilation you need OpenCV headers :
+	* libcv
+	* libhighgui
+	* libcvaux
+
+For Debian GNU/Linux :
+	aptitude install libcv-dev libhighgui-dev libcvaux-dev

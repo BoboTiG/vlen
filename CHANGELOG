@@ -1,0 +1,16 @@
+
+*** 0.1d
+	+ update capture function : cvCreateFileCapture instead of cvCaptureFromFile (obsolete)
+
+*** 0.1c
+	+ fix help message
+
+*** 0.1b
+	+ fix seconds display
+	+ fix return codes
+	+ clean make file
+	+ add OpenCV library version to -h (or --help) option
+	+ add man page
+
+*** 0.1a
+	+ first version
