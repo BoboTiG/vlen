@@ -14,14 +14,8 @@
 #include <opencv/highgui.h>
 
 int main(int argc, char *argv[]) {
-	CvCapture* video	= 0;
-	double fps			= 0;
-	double total		= 0;
-	double len			= 0;
-	double h			= 0;
-	double m			= 0;
-	double s			= 0;
-	double r			= 0;
+	CvCapture* video = 0;
+	double fps, total, len, h, m, s, r = 0;
 	unsigned int quiet	= 0;
 	
 	if ( argc < 2 ) {
@@ -47,7 +41,7 @@ Options :\n\
 Report bugs, suggestions and comments to <bobotig@gmail.com>.\n");
 		return EXIT_SUCCESS;
 	} else if ( ! strcmp(argv[1], "-v") || 
-				! strcmp(argv[1], "--version") ) {
+	            ! strcmp(argv[1], "--version") ) {
 		printf("vlen v0.1d.\nOpenCV library v%s.\n", CV_VERSION);
 		return EXIT_SUCCESS;
 	}
