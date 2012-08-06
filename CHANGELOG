@@ -1,16 +1,21 @@
 
+*** 0.2
+	+ traduction française
+	+ ajout du binaire pour GNU/Linux 64 bits
+	^ corrections diverses dans le fichier Makefile
+
 *** 0.1d
-	+ update capture function : cvCreateFileCapture instead of cvCaptureFromFile (obsolete)
+	+ màj de la fonction de capture : cvCreateFileCapture à la place de cvCaptureFromFile (obsolète)
 
 *** 0.1c
-	+ fix help message
+	^ correction de l'aide
 
 *** 0.1b
-	+ fix seconds display
-	+ fix return codes
-	+ clean make file
-	+ add OpenCV library version to -h (or --help) option
-	+ add man page
+	+ ajout de la version d'OpenCV utilisée pour l'option -h (ou --help)
+	+ ajout du manuel
+	^ nettoyage du fichier Makefile
+	^ correction des codes de retour
+	^ correction de l'affichage des secondes
 
 *** 0.1a
-	+ first version
+	+ premier jet

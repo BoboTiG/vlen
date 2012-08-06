@@ -2,7 +2,7 @@
 vlen
 ====
 
-Copyright (C) 2010-2011 by BoboTiG.
+Copyright (C) 2010-2012 by BoboTiG.
  
 vlen comes with ABSOLUTELY NO WARRANTY.
 
@@ -19,15 +19,13 @@ Requirements
 
 For source compilation you need OpenCV headers :
 
-* libcv
+* libopencv
 
 * libhighgui
 
-* libcvaux
-
 For Debian GNU/Linux :
 
-	aptitude install libcv-dev libhighgui-dev libcvaux-dev
+	aptitude install libopencv-dev libhighgui-dev
 
 
 Installation

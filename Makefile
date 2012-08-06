@@ -1,15 +1,14 @@
 CC     = gcc
-CFLAGS = -Wall -pedantic -O3
-LIBS   = -lm `pkg-config --cflags opencv` `pkg-config --libs opencv`
+CFLAGS = -O3 -s
+LIBS   = -lm -lopencv_core -lopencv_highgui
 PREFIX = /usr/bin
 TOOL   = vlen
 DOCDIR = /usr/share/doc/${TOOL}
 MAN    = /usr/share/man/man1
 
-all:
+all: clean
 	mkdir -p bin
 	${CC} ${CFLAGS} ${LIBS} src/main.c -o bin/${TOOL}
-	strip --strip-all bin/${TOOL}
 
 clean:
 	rm -f bin/${TOOL}
@@ -24,10 +23,10 @@ install:
 	install -s bin/${TOOL} ${PREFIX}
 	mkdir -p ${DOCDIR}
 	chmod 755 ${DOCDIR}
-	install -m 644 -t ${DOCDIR} CHANGELOG LICENSE README REQUIREMENTS
+	install -m 644 -t ${DOCDIR} CHANGELOG LICENSE README.md REQUIREMENTS
 	install -m 644 -t ${MAN} ${TOOL}.1.gz
 
 uninstall:
 	rm -f ${PREFIX}/${TOOL}
-	rm -rdf ${DOCDIR}
+	rm -rf ${DOCDIR}
 	rm -f ${MAN}/${TOOL}.1.gz
